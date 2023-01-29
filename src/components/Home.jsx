@@ -4,32 +4,22 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="">
-        <div className="relative">
-          <div>
+      <div className="w-full flex flex-col justify-between pt-20">
+        <div className="grid md:grid-cols-3">
+          <div className="flex flex-col justify-center align-items md:items-start w-full col-span-1 pl-2">
+            <p className="uppercase text-4xl">Autozure</p>
+            <p className="text-3xl">Buying used car has never been this easy</p>
+            <p className="py-2 text-2xl italic">
+              A platform where one can safely and securely transact, at a
+              minimal cost to both individual buyer and seller
+            </p>
+          </div>
+          <div className="col-span-2">
             <img
-              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80"
-              alt="car"
+              src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
             />
           </div>
-
-          <div className="absolute top-1/4 px-2 w-1/2 text-center">
-            <div>
-              <p className="text-xl md:text-2xl text-white py-2">
-                Buying used car has never been this easy
-              </p>
-              <p className="text-sm md:text-xl text-white py-2">
-                Autozure is a platform where buyers and sellers can safely and
-                securely transact, at a minimal cost to buyer and seller
-              </p>
-            </div>
-
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              <Link to="/buy">Buy</Link>
-            </button>
-          </div>
-
-          <div></div>
         </div>
       </div>
     </>

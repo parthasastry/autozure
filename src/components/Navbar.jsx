@@ -11,12 +11,14 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="w-screen h-[60px] z-10 bg-[#64748B] fixed drop-shadow-lg">
+        <div className="w-screen h-20 z-20 bg-[#64748B] fixed drop-shadow-lg">
           <div className="px-2 flex justify-between items-center w-full h-full text-white">
             <div className="flex justify-between items-center">
-              <Link to="/">
-                <span className="uppercase font-bold text-2xl">Autozure</span>
-              </Link>
+              <p>
+                <Link to="/">
+                  <span className="uppercase font-bold text-2xl">Autozure</span>
+                </Link>
+              </p>
             </div>
             <ul className="hidden uppercase md:px-20 md:flex">
               <li className="p-4">
