@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Buy from "./components/Buy";
 import Sell from "./components/Sell";
+import CarDetails from "./components/CarDetails";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/buy" element={<Buy />} />
+          <Route path="/:vin" element={<CarDetails />} />
           <Route path="/sell" element={<Sell />} />
         </Routes>
         <Footer />
