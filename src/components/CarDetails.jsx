@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import numberFormat from "../utilities";
 
 const CarDetails = () => {
   let { vin } = useParams();
@@ -22,7 +23,7 @@ const CarDetails = () => {
   return (
     <>
       <div className="w-full p-20">
-        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold my-2 py-2 px-4 rounded text-center">
+        <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold my-2 py-2 px-4 rounded text-center">
           <Link to="/buy">Go Back</Link>
         </button>
         <div>
@@ -46,8 +47,8 @@ const CarDetails = () => {
                   {car.year}
                 </div>
                 <div>
-                  <span className="font-bold">Price: $</span>
-                  {car.price}
+                  <span className="font-bold">Price: </span>
+                  {numberFormat(car.price)}
                 </div>
                 <div>
                   <span className="font-bold">Zipcode: </span>
